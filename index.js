@@ -56,7 +56,24 @@ const questEng = [
 
 const questInt = [
     {
-        type
-    }
+        type: 'input',
+        name: 'name',
+        message: "Enter Intern's Name.",
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'Enter Employee ID Number.',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter email address.',
+    },
+    {
+        type: 'input',
+        name: 'school',
+        message: 'Enter name of school Intern attends.',
+    },
 ]
 
