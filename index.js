@@ -2,11 +2,11 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 
-const questions = [
+const questMan = [
     {
         type: "input",
         name: 'name',
-        message: 'Enter Managers Name.',
+        message: "Enter Manager's Name.",
     },
     {
         type: 'input',
@@ -29,5 +29,34 @@ const questions = [
         message: "Would you like to add any additional team members",
         choices: ['Engineer', 'Intern', 'Finish building team'],
     },
+]
+
+const questEng = [
+    {
+        type: 'input',
+        name: 'name',
+        message: "Enter Engineer's name.",
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'Enter Employee ID Number.',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter email address.',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter GitHub username.',
+    },
+]
+
+const questInt = [
+    {
+        type
+    }
 ]
 
