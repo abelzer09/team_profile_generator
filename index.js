@@ -3,18 +3,6 @@ const fs = require('fs');
 const path = require('path');
 
 
-class Manager extends Employee {
-    constructor(name, officeNumber){
-        super(name, id, email);
-        this.officeNumber = officeNumber;
-    }
-
-    getRole(){
-        return "Manager"
-    }
-
-}
-
 class Engineer extends Employee {
     constructor(name, github){
         super(name, id, email);
