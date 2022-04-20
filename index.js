@@ -1,6 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
+const Employee = require('./employee');
+const Manager = require('./manager');
+const Engineer = require('./engineer');
+const Intern = require('./intern');
 
 const questMan = [
     {
@@ -23,12 +27,12 @@ const questMan = [
         name: 'office',
         message: "Enter office number.",
     },
-    {
-        type: "list",
-        name: 'team',
-        message: "Would you like to add any additional team members",
-        choices: ['Engineer', 'Intern', 'Finish building team'],
-    },
+    // {
+    //     type: "list",
+    //     name: 'team',
+    //     message: "Would you like to add any additional team members",
+    //     choices: ['Engineer', 'Intern', 'Finish building team'],
+    // },
 ]
 
 const questEng = [
@@ -76,4 +80,16 @@ const questInt = [
         message: 'Enter name of school Intern attends.',
     },
 ]
+
+const nextEmp = [
+    {
+        type: "list",
+        name: 'team',
+        message: "Would you like to add any additional team members",
+        choices: ['Engineer', 'Intern', 'Finish building team'],
+    },
+]
+
+
+
 
