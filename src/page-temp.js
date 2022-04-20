@@ -1,15 +1,51 @@
 const generate = team =>{
     const generateMan = manager =>{
         return `
-        <div>${manager.getName()}</div>`
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">${manager.getName()}</h5>
+              <h6 class="card-title">Manager</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${manager.getID()}</li>
+                <li class="list-group-item">Email: ${manager.getEmail()}</li>
+                <li class="list-group-item">Office number: ${manager.getOffice()}</li>
+            </ul>
+          </div>
+        </div>`
     }
     const generateEng = engineer =>{
         return `
-        <div>${engineer.getName()}</div>`
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">${engineer.getName()}</h5>
+              <h6 class="card-title">Engineer</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${engineer.getID()}</li>
+                <li class="list-group-item">Email: ${engineer.getEmail()}</li>
+                <li class="list-group-item">GitHub: ${engineer.getGithub()}</li>
+            </ul>
+          </div>
+        </div>`
     }
     const generateInt = intern =>{
         return `
-        <div>${intern.getName()}</div>`
+        <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">${intern.getName()}</h5>
+            <h6 class="card-title">Intern</h6>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">ID: ${intern.getID()}</li>
+              <li class="list-group-item">Email: ${intern.getEmail()}</li>
+              <li class="list-group-item">School: ${intern.getSchool()}</li>
+          </ul>
+        </div>
+      </div>`
     }
     const html = [];
 
@@ -42,6 +78,7 @@ module.exports = team =>{
     <title>Document</title>
 </head>
 <body>
+
     ${generate(team)}
 </body>
 </html>`
