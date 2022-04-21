@@ -8,7 +8,7 @@ const generate = team =>{
               <h5 class="card-title">Manager</h5>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${manager.getID()}</li>
+                <li class="list-group-item">ID: ${manager.getId()}</li>
                 <li class="list-group-item">Email: ${manager.getEmail()}</li>
                 <li class="list-group-item">Office number: ${manager.getOffice()}</li>
             </ul>
@@ -24,7 +24,7 @@ const generate = team =>{
               <h5 class="card-title">Engineer</h5>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${engineer.getID()}</li>
+                <li class="list-group-item">ID: ${engineer.getId()}</li>
                 <li class="list-group-item">Email: ${engineer.getEmail()}</li>
                 <li class="list-group-item">GitHub: ${engineer.getGithub()}</li>
             </ul>
@@ -40,7 +40,7 @@ const generate = team =>{
             <h5 class="card-title">Intern</h5>
           </div>
           <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${intern.getID()}</li>
+              <li class="list-group-item">ID: ${intern.getId()}</li>
               <li class="list-group-item">Email: ${intern.getEmail()}</li>
               <li class="list-group-item">School: ${intern.getSchool()}</li>
           </ul>
