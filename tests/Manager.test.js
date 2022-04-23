@@ -25,4 +25,10 @@ describe('Manager class', () => {
         expect(office.officeNumber).toBe(officeNumber)
     });
 
+    describe('getRole', () => {
+        it('returns Role', () => {
+          expect(new Manager('ryan', 1, 'ryan@gmail.com',"1").getRole()).toBe("Manager");
+        });
+    });
+
 });

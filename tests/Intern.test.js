@@ -25,4 +25,10 @@ describe('Intern class', () => {
         expect(sch.school).toBe(school)
     });
 
+    describe('getRole', () => {
+        it('returns Role', () => {
+          expect(new Intern('ryan', 1, 'ryan@gmail.com',"UofM").getRole()).toBe("Intern");
+        });
+    });
+
 });

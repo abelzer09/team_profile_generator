@@ -10,7 +10,7 @@ describe('Employee class', () => {
 
     it('able to set id with constructer function', () => {
         const id = 7
-        const ident = new Employee('sam', id)
+        const ident = new Employee('mike', 7)
         expect(ident.id).toBe(id)
     });
 
@@ -28,7 +28,19 @@ describe('Employee class', () => {
 
     describe('getId', () => {
         it('returns Id', () => {
-          expect(id.getId()).toBe(1);
+          expect(new Employee('ryan', 1).getId()).toBe(1);
+        });
+    });
+
+    describe('getEmail', () => {
+        it('returns Email', () => {
+          expect(new Employee('ryan', 1, 'ryan@gmail.com').getEmail()).toBe('ryan@gmail.com');
+        });
+    });
+
+    describe('getRole', () => {
+        it('returns Role', () => {
+          expect(new Employee('ryan', 1, 'ryan@gmail.com').getRole()).toBe("Employee");
         });
     });
       

@@ -25,4 +25,17 @@ describe('Engineer class', () => {
         expect(gitHub.github).toBe(github)
     });
 
+    
+    describe('getGitHub', () => {
+        it('returns github', () => {
+          expect(new Engineer('ryan', 1, 'ryan@gmail.com', "ryan0909").getGithub()).toBe("ryan0909");
+        });
+    });
+
+    describe('getRole', () => {
+        it('returns Role', () => {
+          expect(new Engineer('ryan', 1, 'ryan@gmail.com',"ryan0909").getRole()).toBe("Engineer");
+        });
+    });
+
 });
